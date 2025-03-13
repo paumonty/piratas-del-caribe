@@ -1,4 +1,4 @@
-# piratas-del-caribe
+# Piratas del Caribe
 
 ### 🛳️ Hundir la Flota (Piratas del caribe) en Python
 
