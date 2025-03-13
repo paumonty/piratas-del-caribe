@@ -1,6 +1,6 @@
 # piratas-del-caribe
 
-### 🛳️ Hundir la Flota (Battleship Game) en Python
+### 🛳️ Hundir la Flota (Piratas del caribe) en Python
 
 Bienvenido al repositorio de Hundir la Flota, una versión en consola del clásico juego de estrategia naval conocido como Battleship, desarrollado en Python. Este proyecto tiene como objetivo principal practicar la programación estructurada y modular, al mismo tiempo que se crea un juego entretenido y funcional.
 
