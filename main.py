@@ -10,25 +10,30 @@ disparos_maquina = set()
 
 
 
-while True:
-    print("\n Tu tablero:")
-    mostrar_tablero(tablero_jugador)
+def main():
+    tablero_jugador = crear_tablero()
+    tablero_maquina = crear_tablero()
+    colocar_barcos(tablero_jugador)
+    colocar_barcos(tablero_maquina)
+    disparos_maq = set()
 
-    print("\n Tablero de la máquina:")
-    mostrar_tablero(np.where(tablero_maquina == "O", "_", tablero_maquina))  
+    while True:
+        print("\n Tu tablero:")
+        mostrar_tablero(tablero_jugador)
 
-   
-    casilla = pedir_casilla_al_usuario()
-    disparar(casilla, tablero_maquina)
+        print("\n Tablero enemigo (oculto):")
+        mostrar_tablero(np.where(tablero_maquina == "O", "_", tablero_maquina))
 
-    if juego_terminado(tablero_maquina):
-        print("\n ¡Has ganado!")
-        break
+        print("\n Tu turno:")
+        disparar(tablero_maquina)
 
-    disparo_maquina(tablero_jugador, disparos_maquina)
+        if juego_terminado(tablero_maquina):
+            print(" ¡Has ganado!")
+            break
 
-    if juego_terminado(tablero_jugador):
-        print("\n La máquina ha ganado...")
-        break
+        print("\n Turno de la máquina:")
+        disparo_maquina(tablero_jugador, disparos_maq)
 
-    
+        if juego_terminado(tablero_jugador):
+            print(" La máquina ha ganado.")
+            break
