@@ -19,8 +19,8 @@ while True:
     mostrar_tablero(tablero_jugador)
 
 
-    disparar(tablero_maquina)
-    disparo_maquina(tablero_jugador, disparos_maq)
+    # disparar(tablero_maquina)
+    # disparo_maquina(tablero_jugador, disparos_maq)
 
     # for fila in tablero_jugador:
     #     for casilla in fila:
