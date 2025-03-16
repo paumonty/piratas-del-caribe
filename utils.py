@@ -47,7 +47,7 @@ def crear_barco_aleatorio(eslora, tablero):
         for h, v in barco_aleatorio: 
             if tablero[h, v] != "_": 
                 valido = False
-                break  # no hace falta volver a llamar a la función, el while se repite solo
+                break  
         
         if valido: 
             return barco_aleatorio
