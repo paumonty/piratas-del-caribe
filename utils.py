@@ -1,5 +1,22 @@
 import random
 import numpy as np
+import time
+
+def introduccion_juego():
+    print("\n" + "=" * 40)
+    print("BIENVENIDO A BATALLA NAVAL CONTRA LOS PIRATAS DEL CARIBE")
+    print("=" * 40)
+    time.sleep(1)
+
+    print("\nPrepárate, capitán... ⚓")
+    time.sleep(1)
+    print("Colocando barcos enemigos... 🚢")
+    time.sleep(1)
+    print("Listo tu tablero... 📍")
+    time.sleep(1)
+    print("\n Estás listo para hundir la flota enemiga? 💥\n")
+    time.sleep(1)
+    input("Pulsa Enter para comenzar \n")
 
 
 def crear_tablero(tamaño=(10,10)):
@@ -44,12 +61,6 @@ def colocar_barcos(tablero):
         for h, v in barco_valido:
             tablero[h, v] = "O"
 
-# def mostrar_tablero(tablero):
-#     print("   0 1 2 3 4 5 6 7 8 9")  
-#     print("  ---------------------")
-#     for i in range(10):
-#         fila = " ".join(tablero[i])
-#         print(f"{i}| {fila}")
 
 def mostrar_tablero(tablero, ocultar_barcos=False):
     print("   0 1 2 3 4 5 6 7 8 9")  
