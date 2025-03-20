@@ -1,6 +1,6 @@
 from utils import *
 
-introduccion_juego()
+# introduccion_juego()
 
 tablero_jugador = crear_tablero()
 tablero_maquina = crear_tablero()
@@ -14,8 +14,7 @@ while True:
     print("\nEl tablero de la maquina\n")
     mostrar_tablero(tablero_maquina)
     mostrar_tablero(np.where(tablero_maquina == "O", "_", tablero_maquina))
-    print("\n"
-    "Su tablero\n")
+    print("\nSu tablero\n")
     mostrar_tablero(tablero_jugador)
 
 
